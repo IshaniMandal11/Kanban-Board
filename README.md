@@ -2,7 +2,7 @@
 
 A task management board built with Django, HTML, and CSS. Organise work across **Todo**, **In Progress**, and **Done** columns.
 
-**Live Demo:** [kanban-board.onrender.com](https://kanban-board.onrender.com) *(update this link after deploy)*
+**Live Demo:** [kanban-board-1-zcwh.onrender.com](https://kanban-board-1-zcwh.onrender.com)
 
 ---
 
