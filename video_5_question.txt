@@ -1,0 +1,405 @@
+Here are **30 Boolean & Condition practice questions** **based ONLY on today’s learning**:
+✔ `if / elif / else`
+✔ boolean values (`True`, `False`)
+✔ `and`, `or`, `not`
+✔ `==` vs `is`
+✔ truthy & falsy values
+✔ identity (`id()`)
+✔ empty sequences
+✔ login checks
+✔ object comparison
+
+All questions include **pseudocode**.
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Check if a user is logged in (logged_in = True)**
+
+**Pseudocode:**
+
+```
+logged_in = True
+if logged_in:
+    print("Welcome")
+```
+
+---
+
+### **2. Check if a variable equals 10 using `==`**
+
+**Pseudocode:**
+
+```
+num = 10
+if num == 10:
+    print("Equal")
+```
+
+---
+
+### **3. Use `not` to check if logged in is False**
+
+**Pseudocode:**
+
+```
+if not logged_in:
+    print("Please login")
+```
+
+---
+
+### **4. Check if language equals `"python"`**
+
+**Pseudocode:**
+
+```
+if language == "python":
+    print("Python selected")
+```
+
+---
+
+### **5. Print "empty" if value is an empty string**
+
+**Pseudocode:**
+
+```
+value = ""
+if not value:
+    print("empty")
+```
+
+---
+
+### **6. Check if two lists have equal values (==)**
+
+**Pseudocode:**
+
+```
+if a == b:
+    print("same values")
+```
+
+---
+
+### **7. Print the result of `False` condition**
+
+**Pseudocode:**
+
+```
+if False:
+    print("true")
+else:
+    print("false")
+```
+
+---
+
+### **8. Check if number -1 is truthy**
+
+**Pseudocode:**
+
+```
+if -1:
+    print("truthy")
+```
+
+---
+
+### **9. Check if dictionary `{}` is falsy**
+
+**Pseudocode:**
+
+```
+if {}:
+    print("true")
+else:
+    print("false")
+```
+
+---
+
+### **10. Use elif to print `"java selected"`**
+
+**Pseudocode:**
+
+```
+if lang == "python":
+    print("python")
+elif lang == "java":
+    print("java")
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Check if user is admin AND logged in**
+
+**Pseudocode:**
+
+```
+if user == "admin" and logged_in:
+    print("Admin page")
+```
+
+---
+
+### **12. Check if user is admin OR moderator**
+
+**Pseudocode:**
+
+```
+if user == "admin" or user == "moderator":
+    print("Access granted")
+```
+
+---
+
+### **13. Compare lists using `is` vs `==`**
+
+**Pseudocode:**
+
+```
+a = [1,2]
+b = [1,2]
+print(a == b)
+print(a is b)
+```
+
+---
+
+### **14. Create two variables referring to same object and show `is` is True**
+
+**Pseudocode:**
+
+```
+a = [1,2,3]
+b = a
+print(a is b)
+```
+
+---
+
+### **15. Check if condition = None**
+
+**Pseudocode:**
+
+```
+condition = None
+if not condition:
+    print("Falsy")
+```
+
+---
+
+### **16. Check if list is non-empty**
+
+**Pseudocode:**
+
+```
+items = [1]
+if items:
+    print("Not empty")
+```
+
+---
+
+### **17. Check identity using id()**
+
+**Pseudocode:**
+
+```
+print(id(a))
+print(id(b))
+```
+
+---
+
+### **18. If number is zero → print "zero"**
+
+**Pseudocode:**
+
+```
+if num == 0:
+    print("zero")
+```
+
+---
+
+### **19. If string is not empty → print message**
+
+**Pseudocode:**
+
+```
+if name:
+    print("valid name")
+```
+
+---
+
+### **20. Check if BOTH email AND password are filled**
+
+**Pseudocode:**
+
+```
+if email and password:
+    print("Ready to login")
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+These test deep boolean logic and identity.
+
+---
+
+### **21. Write login logic with AND + NOT**
+
+✔ If user is `"admin"` AND NOT logged in → print "Please login first"
+**Pseudocode:**
+
+```
+if user == "admin" and not logged_in:
+    print("Please login first")
+```
+
+---
+
+### **22. Check if two lists have same values but are different objects**
+
+**Pseudocode:**
+
+```
+a = [1,2,3]
+b = [1,2,3]
+if a == b and a is not b:
+    print("same values, different objects")
+```
+
+---
+
+### **23. Nested IF:
+
+Check (logged_in) AND (role is admin)**
+**Pseudocode:**
+
+```
+if logged_in:
+    if role == "admin":
+        print("Admin dashboard")
+```
+
+---
+
+### **24. Validate username must not be empty AND must not be None**
+
+**Pseudocode:**
+
+```
+if username and username is not None:
+    print("Valid username")
+```
+
+---
+
+### **25. Check if a number is positive AND even**
+
+**Pseudocode:**
+
+```
+if num > 0 and num % 2 == 0:
+    print("positive even")
+```
+
+---
+
+### **26. Check if object has same id before and after assignment**
+
+**Pseudocode:**
+
+```
+a = [1,2]
+old_id = id(a)
+a.append(3)
+new_id = id(a)
+print(old_id == new_id)
+```
+
+---
+
+### **27. Evaluate complex condition using and/or/not**
+
+✔ Example:
+User must be logged in AND (role is admin OR manager)
+**Pseudocode:**
+
+```
+if logged_in and (role == "admin" or role == "manager"):
+    print("Access granted")
+```
+
+---
+
+### **28. Determine if value is falsy without using ==**
+
+Falsy values: 0, "", [], {}, None
+**Pseudocode:**
+
+```
+if not value:
+    print("Falsy value")
+```
+
+---
+
+### **29. Simulate switch-case using if/elif**
+
+**Pseudocode:**
+
+```
+if choice == 1:
+    print("one")
+elif choice == 2:
+    print("two")
+elif choice == 3:
+    print("three")
+else:
+    print("invalid")
+```
+
+---
+
+### **30. Check if two variables refer to same object OR have same value**
+
+**Pseudocode:**
+
+```
+if a is b:
+    print("same object")
+elif a == b:
+    print("same value")
+else:
+    print("different")
+```
+
+---
+
+# 🎉 Want More?
+
+I can generate:
+
+✔ Boolean MCQs
+✔ Logic puzzles
+✔ Coding challenges
+✔ Revision sheet
+✔ Flashcards for today’s learning
+
+Just tell me!

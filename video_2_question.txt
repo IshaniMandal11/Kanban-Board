@@ -1,0 +1,398 @@
+Here are **30 Python number/arithmetic practice questions** based on your code — divided into **10 Easy**, **10 Medium**, and **10 Hard** — each with **clear pseudocode**.
+
+These questions cover:
+
+* Arithmetic operators
+* Comparisons
+* abs(), round()
+* Typecasting (int, float)
+* Expressions & logic
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Add two numbers: 5 + 9**
+
+**Pseudocode**
+
+```
+a = 5
+b = 9
+print(a + b)
+```
+
+---
+
+### **2. Subtract 7 from 15**
+
+**Pseudocode**
+
+```
+print(15 - 7)
+```
+
+---
+
+### **3. Multiply 6 and 4**
+
+**Pseudocode**
+
+```
+print(6 * 4)
+```
+
+---
+
+### **4. Divide 10 by 2**
+
+**Pseudocode**
+
+```
+print(10 / 2)
+```
+
+---
+
+### **5. Find floor division: 17 // 3**
+
+**Pseudocode**
+
+```
+print(17 // 3)
+```
+
+---
+
+### **6. Compute exponent: 5²**
+
+**Pseudocode**
+
+```
+print(5 ** 2)
+```
+
+---
+
+### **7. Find remainder: 14 % 5**
+
+**Pseudocode**
+
+```
+print(14 % 5)
+```
+
+---
+
+### **8. Convert string `"50"` to integer and add 10**
+
+**Pseudocode**
+
+```
+num = int("50")
+print(num + 10)
+```
+
+---
+
+### **9. Find absolute value of -15**
+
+**Pseudocode**
+
+```
+print(abs(-15))
+```
+
+---
+
+### **10. Round 7.68 to nearest whole number**
+
+**Pseudocode**
+
+```
+print(round(7.68))
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Compare if 25 is greater than 10**
+
+**Pseudocode**
+
+```
+if 25 > 10:
+    print("Yes")
+```
+
+---
+
+### **12. Check if two numbers (12, 18) are not equal**
+
+**Pseudocode**
+
+```
+if 12 != 18:
+    print("Not equal")
+```
+
+---
+
+### **13. Add two input numbers (from user)**
+
+**Pseudocode**
+
+```
+a = int(input())
+b = int(input())
+print(a + b)
+```
+
+---
+
+### **14. Convert `"100"` and `"250"` to integers and multiply**
+
+**Pseudocode**
+
+```
+x = int("100")
+y = int("250")
+print(x * y)
+```
+
+---
+
+### **15. Calculate the average of 3 numbers**
+
+**Pseudocode**
+
+```
+a, b, c = numbers
+avg = (a+b+c)/3
+print(avg)
+```
+
+---
+
+### **16. Find the largest of three numbers**
+
+**Pseudocode**
+
+```
+if a > b and a > c:
+    print(a)
+elif b > c:
+    print(b)
+else:
+    print(c)
+```
+
+---
+
+### **17. Convert float 12.99 to int and check if > 10**
+
+**Pseudocode**
+
+```
+x = int(12.99)
+if x > 10:
+    print("Yes")
+```
+
+---
+
+### **18. Round a float to 2 decimal places**
+
+**Pseudocode**
+
+```
+print(round(5.6789, 2))
+```
+
+---
+
+### **19. Check if number is even or odd**
+
+**Pseudocode**
+
+```
+if num % 2 == 0:
+    print("even")
+else:
+    print("odd")
+```
+
+---
+
+### **20. Simple interest: P=1000, R=5%, T=3**
+
+**Pseudocode**
+
+```
+si = (P*R*T)/100
+print(si)
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+---
+
+### **21. Calculate compound interest**
+
+**Pseudocode**
+
+```
+ci = P * (1 + R/100)**T - P
+print(ci)
+```
+
+---
+
+### **22. Convert a numeric string list `["10","20","30"]` to integers and sum**
+
+**Pseudocode**
+
+```
+sum = 0
+for x in list:
+    sum += int(x)
+print(sum)
+```
+
+---
+
+### **23. Find factorial of a number**
+
+**Pseudocode**
+
+```
+fact = 1
+for i in range(1, n+1):
+    fact *= i
+print(fact)
+```
+
+---
+
+### **24. Find the highest digit in a number (e.g., 57381 → 8)**
+
+**Pseudocode**
+
+```
+num = input()
+max_digit = max(num)
+print(max_digit)
+```
+
+---
+
+### **25. Calculate the sum of digits of a number**
+
+**Pseudocode**
+
+```
+num = input()
+sum = 0
+for digit in num:
+    sum += int(digit)
+print(sum)
+```
+
+---
+
+### **26. Reverse an integer without converting to string**
+
+**Pseudocode**
+
+```
+rev = 0
+while num > 0:
+    digit = num % 10
+    rev = rev*10 + digit
+    num //= 10
+print rev
+```
+
+---
+
+### **27. Check if a number is Armstrong number**
+
+Example: 153 = 1³ + 5³ + 3³
+**Pseudocode**
+
+```
+sum = 0
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit**3
+    temp //= 10
+if sum == num:
+    print("Armstrong")
+```
+
+---
+
+### **28. Generate the first 10 Fibonacci numbers**
+
+**Pseudocode**
+
+```
+a = 0, b = 1
+for i in 10:
+    print(a)
+    next = a + b
+    a = b
+    b = next
+```
+
+---
+
+### **29. Perform typecasting safely: convert “abc” to int → handle error**
+
+**Pseudocode**
+
+```
+try:
+    num = int("abc")
+except:
+    print("Invalid number")
+```
+
+---
+
+### **30. Create a simple calculator (add, subtract, multiply, divide)**
+
+**Pseudocode**
+
+```
+if op == "+":
+    print(a+b)
+elif op == "-":
+    print(a-b)
+elif op == "*":
+    print(a*b)
+elif op == "/":
+    print(a/b)
+```
+
+---
+
+# 🎉 Want More?
+
+I can generate:
+
+✔ 20 MCQs
+✔ Coding interview questions
+✔ Beginner Python exercises
+✔ Number system puzzles
+✔ Project ideas
+
+Just tell me: **“Give more questions”** or **“Give MCQs”**.

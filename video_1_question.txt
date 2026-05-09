@@ -1,0 +1,408 @@
+Here are **30 Python string practice questions** based on your code — divided into **10 Easy**, **10 Medium**, and **10 Hard** — with **pseudocode** for each.
+
+You can use these to test your understanding of strings, slicing, formatting, and built-in functions.
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Print the first 3 characters of the string `"Programming"`**
+
+**Pseudocode:**
+
+```
+text = "Programming"
+print first 3 characters → text[0:3]
+```
+
+---
+
+### **2. Convert `"Hello World"` to lowercase**
+
+**Pseudocode:**
+
+```
+text = "Hello World"
+print lowercase of text → text.lower()
+```
+
+---
+
+### **3. Count how many times `"a"` appears in `"Banana"`**
+
+**Pseudocode:**
+
+```
+text = "Banana"
+count = text.count("a")
+print count
+```
+
+---
+
+### **4. Replace `"day"` with `"night"` in `"Monday"`**
+
+**Pseudocode:**
+
+```
+text = "Monday"
+new_text = replace "day" with "night"
+print new_text
+```
+
+---
+
+### **5. Print the last character of `"Python"`**
+
+**Pseudocode:**
+
+```
+text = "Python"
+print text[-1]
+```
+
+---
+
+### **6. Concatenate `"Good"` and `"Morning"`**
+
+**Pseudocode:**
+
+```
+msg = "Good" + " " + "Morning"
+print msg
+```
+
+---
+
+### **7. Check length of the string `"Computer"`**
+
+**Pseudocode:**
+
+```
+text = "Computer"
+len(text)
+```
+
+---
+
+### **8. Slice `"HelloWorld"` to print `"World"`**
+
+**Pseudocode:**
+
+```
+text = "HelloWorld"
+print text[5:10]
+```
+
+---
+
+### **9. Print the string `"He said \"Hi\""`**
+
+**Pseudocode:**
+
+```
+print "He said \"Hi\""
+```
+
+---
+
+### **10. Convert `"python"` to uppercase**
+
+**Pseudocode:**
+
+```
+text = "python"
+print text.upper()
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Print every second character from `"abcdefgh"`**
+
+**Pseudocode:**
+
+```
+text = "abcdefgh"
+print text[0::2]
+```
+
+---
+
+### **12. Reverse the string `"Laptop"`**
+
+**Pseudocode:**
+
+```
+text = "Laptop"
+reverse = text[::-1]
+print reverse
+```
+
+---
+
+### **13. Check if `"world"` exists in `"Hello world"`**
+
+**Pseudocode:**
+
+```
+text = "Hello world"
+if "world" in text:
+    print "found"
+```
+
+---
+
+### **14. Count number of vowels in `"Education"`**
+
+**Pseudocode:**
+
+```
+text = "Education"
+vowels = "aeiouAEIOU"
+count = 0
+for char in text:
+    if char in vowels:
+        count += 1
+print count
+```
+
+---
+
+### **15. Replace all spaces in a string with hyphens**
+
+**Pseudocode:**
+
+```
+text = input
+new = text.replace(" ", "-")
+print new
+```
+
+---
+
+### **16. Extract domain name from email `"user@gmail.com"`**
+
+**Pseudocode:**
+
+```
+email = "user@gmail.com"
+split_email = email.split("@")
+print split_email[1]
+```
+
+---
+
+### **17. Capitalize the first letter of each word in `"hello my friend"`**
+
+**Pseudocode:**
+
+```
+text = "hello my friend"
+print text.title()
+```
+
+---
+
+### **18. Given `"python programming"`, print `"Python Programming"`**
+
+**Pseudocode:**
+
+```
+text = "python programming"
+print text.capitalize each → text.title()
+```
+
+---
+
+### **19. Given `"  Hello  "`, remove leading & trailing spaces**
+
+**Pseudocode:**
+
+```
+text = "  Hello  "
+print text.strip()
+```
+
+---
+
+### **20. Count how many times `"is"` appears in `"This is a string. It is nice."`**
+
+**Pseudocode:**
+
+```
+text = "This is a string. It is nice."
+count = text.count("is")
+print count
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+---
+
+### **21. Find the most frequent character in a string**
+
+**Pseudocode:**
+
+```
+text = input
+dict = empty
+for char in text:
+    dict[char] += 1
+print char with max value in dict
+```
+
+---
+
+### **22. Remove all duplicate characters from a string**
+
+**Pseudocode:**
+
+```
+text = input
+result = ""
+for char in text:
+    if char not in result:
+        result += char
+print result
+```
+
+---
+
+### **23. Check if a string is a palindrome**
+
+**Pseudocode:**
+
+```
+text = input
+if text == text reversed:
+    print "palindrome"
+```
+
+---
+
+### **24. Find first non-repeating character in a string**
+
+**Pseudocode:**
+
+```
+text = input
+for char in text:
+    if text.count(char) == 1:
+        print char
+        break
+```
+
+---
+
+### **25. Remove special characters from a string**
+
+**Pseudocode:**
+
+```
+text = input
+result = ""
+for char in text:
+    if char.isalnum() or char == " ":
+        result += char
+print result
+```
+
+---
+
+### **26. Convert camelCase to snake_case**
+
+**Pseudocode:**
+
+```
+text = "myVariableName"
+result = ""
+for char in text:
+    if char is uppercase:
+        result += "_" + char.lower()
+    else:
+        result += char
+print result
+```
+
+---
+
+### **27. Compress string like `"aaabbcccc"` → `"a3b2c4"`**
+
+**Pseudocode:**
+
+```
+text = input
+count = 1
+result = ""
+for i in range(len(text)-1):
+    if text[i] == text[i+1]:
+        count += 1
+    else:
+        result += text[i] + str(count)
+        count = 1
+# add last char
+result += text[-1] + str(count)
+print result
+```
+
+---
+
+### **28. Extract only digits from `"abc123xyz45"`**
+
+**Pseudocode:**
+
+```
+text = "abc123xyz45"
+digits = ""
+for char in text:
+    if char.isdigit():
+        digits += char
+print digits
+```
+
+---
+
+### **29. Find longest word in a sentence**
+
+**Pseudocode:**
+
+```
+sentence = input
+words = sentence.split()
+max_word = word with max length in words
+print max_word
+```
+
+---
+
+### **30. Count frequency of each word in a paragraph**
+
+**Pseudocode:**
+
+```
+text = input
+words = text.split()
+dict = {}
+for w in words:
+    dict[w] += 1
+print dict
+```
+
+---
+
+# 🎯 If You Want:
+
+✔ I can also generate **multiple-choice questions (MCQs)**
+✔ Coding tests
+✔ Real interview-style string problems
+✔ Python mini-projects using strings
+
+Just tell me: **“give MCQs”** or **“give coding tests”**.

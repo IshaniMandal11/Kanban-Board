@@ -1,0 +1,371 @@
+Here are **30 Python dictionary questions** divided into **10 Easy**, **10 Medium**, and **10 Hard** — each with **clear pseudocode**.
+These questions are based exactly on your topics:
+
+* Dictionary creation
+* Accessing values
+* get()
+* update()
+* pop(), del
+* keys(), values(), items()
+* Loops over dictionaries
+* Nested dictionaries
+* Dictionary of lists
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Create a dictionary with keys `"name"` and `"age"`**
+
+**Pseudocode:**
+
+```
+student = {"name": "John", "age": 20}
+```
+
+---
+
+### **2. Print the value of key `"name"`**
+
+**Pseudocode:**
+
+```
+print(student["name"])
+```
+
+---
+
+### **3. Use get() to access `"city"` (not present)**
+
+**Pseudocode:**
+
+```
+print(student.get("city"))
+```
+
+---
+
+### **4. Add a new key `"country": "India"`**
+
+**Pseudocode:**
+
+```
+student["country"] = "India"
+```
+
+---
+
+### **5. Update `"age"` to 25**
+
+**Pseudocode:**
+
+```
+student["age"] = 25
+```
+
+---
+
+### **6. Remove `"age"` using pop()**
+
+**Pseudocode:**
+
+```
+student.pop("age")
+```
+
+---
+
+### **7. Remove `"name"` using del**
+
+**Pseudocode:**
+
+```
+del student["name"]
+```
+
+---
+
+### **8. Print number of keys in dictionary**
+
+**Pseudocode:**
+
+```
+print(len(student))
+```
+
+---
+
+### **9. Print all keys**
+
+**Pseudocode:**
+
+```
+print(student.keys())
+```
+
+---
+
+### **10. Loop through dictionary and print key-value pairs**
+
+**Pseudocode:**
+
+```
+for key, value in student.items():
+    print(key, value)
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Create a dictionary of lists**
+
+**Pseudocode:**
+
+```
+student = {"subjects": ["math", "science", "english"]}
+```
+
+---
+
+### **12. Add a new subject `"hindi"` inside dictionary list**
+
+**Pseudocode:**
+
+```
+student["subjects"].append("hindi")
+```
+
+---
+
+### **13. Check if the key `"name"` exists**
+
+**Pseudocode:**
+
+```
+if "name" in student:
+    print("exists")
+```
+
+---
+
+### **14. Merge two dictionaries**
+
+**Pseudocode:**
+
+```
+dict1.update(dict2)
+```
+
+---
+
+### **15. Copy a dictionary (avoid reference copy)**
+
+**Pseudocode:**
+
+```
+new_dict = student.copy()
+```
+
+---
+
+### **16. Create a dictionary using dict()**
+
+**Pseudocode:**
+
+```
+student = dict(name="John", age=21)
+```
+
+---
+
+### **17. Convert two lists into a dictionary**
+
+**Pseudocode:**
+
+```
+keys = ["name", "age"]
+values = ["John", 20]
+d = dict(zip(keys, values))
+```
+
+---
+
+### **18. Count frequency of characters in a string using dict**
+
+**Pseudocode:**
+
+```
+freq = {}
+for char in text:
+    freq[char] = freq.get(char, 0) + 1
+```
+
+---
+
+### **19. Clear a dictionary**
+
+**Pseudocode:**
+
+```
+student.clear()
+```
+
+---
+
+### **20. Print only values from dictionary**
+
+**Pseudocode:**
+
+```
+print(student.values())
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+For real logic-building.
+
+---
+
+### **21. Create nested dictionary for student**
+
+**Pseudocode:**
+
+```
+student = {
+  "info": {"name": "Ishani", "age": 20},
+  "subjects": ["math", "science"]
+}
+```
+
+---
+
+### **22. Access nested element `"math"`**
+
+**Pseudocode:**
+
+```
+print(student["subjects"][0])
+```
+
+---
+
+### **23. Update nested dictionary: change age to 25**
+
+**Pseudocode:**
+
+```
+student["info"]["age"] = 25
+```
+
+---
+
+### **24. Loop through nested dictionary**
+
+**Pseudocode:**
+
+```
+for key, value in student.items():
+    print(key, value)
+```
+
+---
+
+### **25. Create a dictionary of students with roll numbers as keys**
+
+**Pseudocode:**
+
+```
+students = {
+  1: {"name": "A", "marks": 80},
+  2: {"name": "B", "marks": 90}
+}
+```
+
+---
+
+### **26. Find student with highest marks from dictionary**
+
+**Pseudocode:**
+
+```
+max_marks = 0
+topper = ""
+for roll, info in students.items():
+    if info["marks"] > max_marks:
+        max_marks = info["marks"]
+        topper = info["name"]
+print(topper)
+```
+
+---
+
+### **27. Reverse dictionary (swap keys & values)**
+
+**Pseudocode:**
+
+```
+new_dict = {}
+for key, value in d.items():
+    new_dict[value] = key
+```
+
+---
+
+### **28. Remove all keys with None values from dict**
+
+**Pseudocode:**
+
+```
+for key in list(d.keys()):
+    if d[key] is None:
+        del d[key]
+```
+
+---
+
+### **29. Find common keys in two dictionaries**
+
+**Pseudocode:**
+
+```
+common = set(dict1.keys()) & set(dict2.keys())
+```
+
+---
+
+### **30. Convert list of dictionaries to one combined dictionary**
+
+Example input:
+
+```
+[{"a":1},{"b":2},{"c":3}]
+```
+
+**Pseudocode:**
+
+```
+result = {}
+for d in list_of_dicts:
+    result.update(d)
+print(result)
+```
+
+---
+
+# 🎉 Want more?
+
+I can prepare:
+
+✔ MCQs
+✔ Coding tests
+✔ Real interview-style dictionary questions
+✔ 50-question worksheet
+
+Just tell me: **“Give MCQs”** or **“Give advanced problems”**.

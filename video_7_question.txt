@@ -1,0 +1,400 @@
+Here are **30 questions based on today’s FUNCTION learning**, divided exactly into:
+
+✔ 10 Easy
+✔ 10 Medium
+✔ 10 Hard
+
+All include **clear pseudocode** matching what you learned:
+
+* `def` function
+* return values
+* default parameters
+* `*args` and `**kwargs`
+* modules & importing
+* leap year function
+* days_in_month
+* DRY principle
+* enumerating inside a function
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Write a function that prints “Hello World”**
+
+**Pseudocode**
+
+```
+def hello():
+    print("Hello World")
+```
+
+---
+
+### **2. Write a function that returns the square of a number**
+
+**Pseudocode**
+
+```
+def square(x):
+    return x*x
+```
+
+---
+
+### **3. Create a function with a default parameter**
+
+**Pseudocode**
+
+```
+def greet(name="Abhisek"):
+    print("Hello", name)
+```
+
+---
+
+### **4. Write a function that adds two numbers**
+
+**Pseudocode**
+
+```
+def add(a, b):
+    return a+b
+```
+
+---
+
+### **5. Write a function that returns the length of a string**
+
+**Pseudocode**
+
+```
+def get_len(s):
+    return len(s)
+```
+
+---
+
+### **6. Call a function and print its memory reference**
+
+**Pseudocode**
+
+```
+print(function_name)
+```
+
+---
+
+### **7. Function that returns True**
+
+**Pseudocode**
+
+```
+def check():
+    return True
+```
+
+---
+
+### **8. Function that takes a name and prints greeting**
+
+**Pseudocode**
+
+```
+def greet(name):
+    print("Hello", name)
+```
+
+---
+
+### **9. Write a function that prints all elements of a list**
+
+**Pseudocode**
+
+```
+def show_list(lst):
+    for item in lst:
+        print(item)
+```
+
+---
+
+### **10. Write a function to check if year divisible by 4**
+
+**Pseudocode**
+
+```
+if year % 4 == 0:
+    print("Leap candidate")
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Write a function with two parameters (greeting, name)**
+
+**Pseudocode**
+
+```
+def say(greeting, name):
+    return f"{greeting}, {name}"
+```
+
+---
+
+### **12. Write function using `*args` to print items**
+
+**Pseudocode**
+
+```
+def show_args(*args):
+    print(args)
+```
+
+---
+
+### **13. Write function using `**kwargs` to print key-value**
+
+**Pseudocode**
+
+```
+def show_kwargs(**kwargs):
+    print(kwargs)
+```
+
+---
+
+### **14. Use `*` to unpack a list into a function**
+
+**Pseudocode**
+
+```
+nums = [1,2,3]
+func(*nums)
+```
+
+---
+
+### **15. Function that checks leap year using proper formula**
+
+**Pseudocode**
+
+```
+def is_leap(year):
+    return year%4==0 and (year%100!=0 or year%400==0)
+```
+
+---
+
+### **16. Write `days_in_month(year, month)`**
+
+**Pseudocode**
+
+```
+if month == 2 and is_leap(year):
+    return 29
+else:
+    return month_days[month]
+```
+
+---
+
+### **17. Function that returns first index of target using enumerate**
+
+**Pseudocode**
+
+```
+for i, value in enumerate(seq):
+    if value == target:
+        return i
+return -1
+```
+
+---
+
+### **18. Function that returns sum of list**
+
+**Pseudocode**
+
+```
+total = 0
+for n in lst:
+    total += n
+return total
+```
+
+---
+
+### **19. Function that counts vowels in string**
+
+**Pseudocode**
+
+```
+count = 0
+for ch in s:
+    if ch in vowels:
+        count += 1
+return count
+```
+
+---
+
+### **20. Import function from another module**
+
+**Pseudocode**
+
+```
+from my_module import find_index
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+Deep logic with functions, args, kwargs, leap-year, search functions, etc.
+
+---
+
+### **21. Write function that handles both args and kwargs**
+
+**Pseudocode**
+
+```
+def func(*args, **kwargs):
+    print(args)
+    print(kwargs)
+```
+
+---
+
+### **22. Function that returns list of leap years in range**
+
+**Pseudocode**
+
+```
+years = []
+for year in range(start, end+1):
+    if is_leap(year):
+        years.append(year)
+return years
+```
+
+---
+
+### **23. Function that calculates factorial using loop**
+
+**Pseudocode**
+
+```
+fact = 1
+for i in range(1, n+1):
+    fact *= i
+return fact
+```
+
+---
+
+### **24. Function to flatten nested list using loops**
+
+**Pseudocode**
+
+```
+flat = []
+for sub_list in lst:
+    for item in sub_list:
+        flat.append(item)
+return flat
+```
+
+---
+
+### **25. Overloaded function effect using default args**
+
+**Pseudocode**
+
+```
+def power(a, b=2):
+    return a**b
+```
+
+---
+
+### **26. Function that returns both min and max of list**
+
+**Pseudocode**
+
+```
+min_val = min(lst)
+max_val = max(lst)
+return min_val, max_val
+```
+
+---
+
+### **27. Function to simulate `find_index` but without enumerate**
+
+**Pseudocode**
+
+```
+for i in range(len(lst)):
+    if lst[i] == target:
+        return i
+return -1
+```
+
+---
+
+### **28. Function that validates email using conditions**
+
+**Pseudocode**
+
+```
+if "@" in email and "." in email:
+    return True
+else:
+    return False
+```
+
+---
+
+### **29. Function that takes unlimited student marks and returns average**
+
+**Pseudocode**
+
+```
+def average(*marks):
+    total = 0
+    for m in marks:
+        total += m
+    return total / len(marks)
+```
+
+---
+
+### **30. Function that logs (prints) name of function when called**
+
+**Pseudocode**
+
+```
+def logger(func):
+    print("Function called:", func.__name__)
+    return func()
+```
+
+---
+
+# 🎉 Want More?
+
+I can also prepare:
+
+✔ MCQs on Functions
+✔ Coding exercises
+✔ A practice test (20 questions)
+✔ A revision sheet of everything you learned today
+
+Just tell me!

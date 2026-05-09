@@ -1,0 +1,368 @@
+Here are **30 Python questions** based on **Lists, Tuples, and Sets** — divided into **10 Easy**, **10 Medium**, and **10 Hard** — each with **clear pseudocode** to help you solve them.
+
+These questions match the exact topics you practiced:
+
+* List indexing
+* List methods (append, insert, extend, remove, pop, sort, etc.)
+* Tuples (immutable)
+* Sets (intersection, union, difference)
+* String join/split
+* Enumerate
+* Membership operators
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Print the first element of the list `["apple", "banana", "cherry"]`**
+
+**Pseudocode:**
+
+```
+list = ["apple", "banana", "cherry"]
+print(list[0])
+```
+
+---
+
+### **2. Add `"python"` to the end of a list**
+
+**Pseudocode:**
+
+```
+courses = ["math", "science"]
+courses.append("python")
+```
+
+---
+
+### **3. Insert `"biology"` at index 1**
+
+**Pseudocode:**
+
+```
+courses.insert(1, "biology")
+```
+
+---
+
+### **4. Remove `"math"` from the list**
+
+**Pseudocode:**
+
+```
+courses.remove("math")
+```
+
+---
+
+### **5. Remove last item using pop()**
+
+**Pseudocode:**
+
+```
+courses.pop()
+```
+
+---
+
+### **6. Sort a list of numbers `[3,1,2]` in ascending order**
+
+**Pseudocode:**
+
+```
+nums.sort()
+```
+
+---
+
+### **7. Check if `"history"` is in the list**
+
+**Pseudocode:**
+
+```
+if "history" in courses:
+    print("found")
+```
+
+---
+
+### **8. Print list length**
+
+**Pseudocode:**
+
+```
+print(len(courses))
+```
+
+---
+
+### **9. Print index of `"physics"`**
+
+**Pseudocode:**
+
+```
+i = courses.index("physics")
+print(i)
+```
+
+---
+
+### **10. Convert list to string with `---` separator**
+
+**Pseudocode:**
+
+```
+s = "---".join(courses)
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Create a list and reverse it**
+
+**Pseudocode:**
+
+```
+nums = [1,2,3,4]
+nums.reverse()
+print(nums)
+```
+
+---
+
+### **12. Sort list of numbers in descending order**
+
+**Pseudocode:**
+
+```
+nums.sort(reverse=True)
+```
+
+---
+
+### **13. Split a string `"a-b-c-d"` into a list**
+
+**Pseudocode:**
+
+```
+s = "a-b-c-d"
+list = s.split("-")
+```
+
+---
+
+### **14. Join a list into a string with commas**
+
+**Pseudocode:**
+
+```
+s = ",".join(list)
+```
+
+---
+
+### **15. Loop through list with index using enumerate**
+
+**Pseudocode:**
+
+```
+for index, item in enumerate(courses, start=1):
+    print(index, item)
+```
+
+---
+
+### **16. Convert list to tuple**
+
+**Pseudocode:**
+
+```
+tuple_1 = tuple(list_1)
+```
+
+---
+
+### **17. Demonstrate tuple immutability**
+
+**Pseudocode:**
+
+```
+tuple_1 = (1,2,3)
+tuple_1[0] = 10  # ERROR
+```
+
+---
+
+### **18. Remove duplicates from list using a set**
+
+**Pseudocode:**
+
+```
+list = [1,1,2,3,3]
+set_list = set(list)
+```
+
+---
+
+### **19. Find intersection of two sets**
+
+**Pseudocode:**
+
+```
+set1.intersection(set2)
+```
+
+---
+
+### **20. Find union of two sets**
+
+**Pseudocode:**
+
+```
+set1.union(set2)
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+These require deeper thinking.
+
+---
+
+### **21. Merge two lists and remove duplicates**
+
+**Pseudocode:**
+
+```
+list3 = list1 + list2
+unique = list(set(list3))
+```
+
+---
+
+### **22. Sort list of strings by length**
+
+**Pseudocode:**
+
+```
+list.sort(key=len)
+```
+
+---
+
+### **23. Flatten a list of lists `[[1,2],[3,4]]`**
+
+**Pseudocode:**
+
+```
+flat = []
+for sub in list:
+    for item in sub:
+        flat.append(item)
+```
+
+---
+
+### **24. Find the second largest number in a list**
+
+**Pseudocode:**
+
+```
+nums.sort(reverse=True)
+print(nums[1])
+```
+
+---
+
+### **25. Count occurrences of each item in a list**
+
+**Pseudocode:**
+
+```
+freq = {}
+for item in list:
+    if item in freq:
+        freq[item] += 1
+    else:
+        freq[item] = 1
+print(freq)
+```
+
+---
+
+### **26. Remove all duplicates but keep original order**
+
+**Pseudocode:**
+
+```
+seen = []
+for item in list:
+    if item not in seen:
+        seen.append(item)
+```
+
+---
+
+### **27. Convert a tuple into a list, modify it, convert back**
+
+**Pseudocode:**
+
+```
+t = (1,2,3)
+temp = list(t)
+temp[0] = 10
+t = tuple(temp)
+```
+
+---
+
+### **28. Find symmetric difference between two sets**
+
+**Pseudocode:**
+
+```
+result = set1.symmetric_difference(set2)
+```
+
+---
+
+### **29. Check if two lists are equal as sets (ignoring order)**
+
+**Pseudocode:**
+
+```
+if set(list1) == set(list2):
+    print("same items")
+```
+
+---
+
+### **30. Create a list of unique sorted items from 3 lists**
+
+**Pseudocode:**
+
+```
+combined = list1 + list2 + list3
+unique_sorted = sorted(set(combined))
+print(unique_sorted)
+```
+
+---
+
+# 🎉 Want More?
+
+I can generate:
+
+✔ MCQs on lists/tuples/sets
+✔ Mini-projects using lists & sets
+✔ Coding interview questions
+✔ Practice exercises with solutions
+
+Just tell me: **“Give MCQs”** or **“Give coding problems”**.

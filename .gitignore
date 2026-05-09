@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Django
+db.sqlite3
+*.sqlite3
+staticfiles/
+media/
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+# Temp / editor noise
+tempCodeRunnerFile.py
+*.tmp
+Thumbs.db
+.DS_Store

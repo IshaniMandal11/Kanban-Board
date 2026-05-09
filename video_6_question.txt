@@ -1,0 +1,422 @@
+Here are **30 Python loop questions** based on exactly what you learned today:
+
+✔ `for` loop
+✔ `while` loop
+✔ `break`
+✔ `continue`
+✔ nested loops
+✔ `range()`
+✔ list iteration
+
+Each question includes **pseudocode**.
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Print numbers from 1 to 5**
+
+**Pseudocode:**
+
+```
+for i in range(1, 6):
+    print(i)
+```
+
+---
+
+### **2. Print every item in the list `[10,20,30]`**
+
+**Pseudocode:**
+
+```
+for num in [10,20,30]:
+    print(num)
+```
+
+---
+
+### **3. Stop loop when number equals 3**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n == 3:
+        break
+```
+
+---
+
+### **4. Skip printing number 4 using continue**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n == 4:
+        continue
+    print(n)
+```
+
+---
+
+### **5. Print characters in string `"abc"`**
+
+**Pseudocode:**
+
+```
+for ch in "abc":
+    print(ch)
+```
+
+---
+
+### **6. Print first 5 natural numbers using while**
+
+**Pseudocode:**
+
+```
+x = 1
+while x <= 5:
+    print(x)
+    x += 1
+```
+
+---
+
+### **7. Print list length via loop**
+
+**Pseudocode:**
+
+```
+count = 0
+for _ in nums:
+    count += 1
+print(count)
+```
+
+---
+
+### **8. Print even numbers from a list**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n % 2 == 0:
+        print(n)
+```
+
+---
+
+### **9. Print 5 times using range**
+
+**Pseudocode:**
+
+```
+for i in range(5):
+    print("hello")
+```
+
+---
+
+### **10. Print numbers in reverse using range**
+
+**Pseudocode:**
+
+```
+for i in range(5,0,-1):
+    print(i)
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Print sum of numbers in list**
+
+**Pseudocode:**
+
+```
+total = 0
+for n in nums:
+    total += n
+print(total)
+```
+
+---
+
+### **12. Break when element is found, otherwise print "not found"**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n == target:
+        print("found")
+        break
+else:
+    print("not found")
+```
+
+---
+
+### **13. Nested loop: print multiplication table of 2**
+
+**Pseudocode:**
+
+```
+for i in range(1,11):
+    print(2, "*", i, "=", 2*i)
+```
+
+---
+
+### **14. Count even and odd numbers**
+
+**Pseudocode:**
+
+```
+even = odd = 0
+for n in nums:
+    if n % 2 == 0:
+        even += 1
+    else:
+        odd += 1
+```
+
+---
+
+### **15. Find max value using loop**
+
+**Pseudocode:**
+
+```
+max_value = nums[0]
+for n in nums:
+    if n > max_value:
+        max_value = n
+print(max_value)
+```
+
+---
+
+### **16. Print all combinations: numbers × letters**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    for ch in "abc":
+        print(n, ch)
+```
+
+---
+
+### **17. Print index + value using range**
+
+**Pseudocode:**
+
+```
+for i in range(len(nums)):
+    print(i, nums[i])
+```
+
+---
+
+### **18. Count how many times 4 appears**
+
+**Pseudocode:**
+
+```
+count = 0
+for n in nums:
+    if n == 4:
+        count += 1
+```
+
+---
+
+### **19. Print only numbers greater than 5**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n > 5:
+        print(n)
+```
+
+---
+
+### **20. While loop: keep subtracting until value reaches 0**
+
+**Pseudocode:**
+
+```
+x = 10
+while x > 0:
+    print(x)
+    x -= 1
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+These require more logical thinking.
+
+---
+
+### **21. Find first repeated number in list**
+
+**Pseudocode:**
+
+```
+seen = set()
+for n in nums:
+    if n in seen:
+        print("first repeat:", n)
+        break
+    seen.add(n)
+```
+
+---
+
+### **22. Generate a 3 × 3 grid using nested loops**
+
+**Pseudocode:**
+
+```
+for i in range(3):
+    for j in range(3):
+        print(i, j)
+```
+
+---
+
+### **23. Print prime numbers from 1–50 (loops inside loops)**
+
+**Pseudocode:**
+
+```
+for n in range(2,51):
+    is_prime = True
+    for i in range(2,n):
+        if n % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(n)
+```
+
+---
+
+### **24. Reverse a list using loop (no slicing allowed)**
+
+**Pseudocode:**
+
+```
+rev = []
+for n in nums:
+    rev = [n] + rev
+print(rev)
+```
+
+---
+
+### **25. Print Fibonacci series using loop**
+
+**Pseudocode:**
+
+```
+a = 0
+b = 1
+for i in range(10):
+    print(a)
+    temp = a + b
+    a = b
+    b = temp
+```
+
+---
+
+### **26. Use continue to skip multiples of 3**
+
+**Pseudocode:**
+
+```
+for n in nums:
+    if n % 3 == 0:
+        continue
+    print(n)
+```
+
+---
+
+### **27. Break loop when sum exceeds 20**
+
+**Pseudocode:**
+
+```
+total = 0
+for n in nums:
+    total += n
+    if total > 20:
+        break
+```
+
+---
+
+### **28. Simulate clock using nested loops (hours, minutes)**
+
+**Pseudocode:**
+
+```
+for h in range(0,3):
+    for m in range(0,60):
+        print(h, ":", m)
+```
+
+---
+
+### **29. While loop: keep asking input until user writes `"exit"`**
+
+**Pseudocode:**
+
+```
+text = ""
+while text != "exit":
+    text = input()
+```
+
+---
+
+### **30. Remove duplicates using loop (no set allowed)**
+
+**Pseudocode:**
+
+```
+unique = []
+for n in nums:
+    if n not in unique:
+        unique.append(n)
+```
+
+---
+
+# 🎉 Want More?
+
+I can also generate:
+
+✔ Loop-based coding challenges
+✔ MCQs
+✔ Pattern printing problems
+✔ Revision notes for everything you learned today
+
+Just tell me!

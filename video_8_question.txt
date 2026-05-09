@@ -1,0 +1,403 @@
+Here are **30 module-import questions** (based on what you learned today), divided into:
+
+✔ 10 Easy
+✔ 10 Medium
+✔ 10 Hard
+
+All include **pseudocode** and are based on:
+
+* `import module`
+* `import module as alias`
+* `from module import function`
+* `from module import *`
+* calling functions from imported modules
+* searching index using imported functions
+* understanding namespaces
+
+---
+
+# ✅ **10 EASY QUESTIONS (With Pseudocode)**
+
+---
+
+### **1. Import a module named `math`**
+
+**Pseudocode**
+
+```
+import math
+```
+
+---
+
+### **2. Import a module using alias**
+
+**Pseudocode**
+
+```
+import math as m
+```
+
+---
+
+### **3. Import only `sqrt` function from math**
+
+**Pseudocode**
+
+```
+from math import sqrt
+```
+
+---
+
+### **4. Use imported function to find index**
+
+**Pseudocode**
+
+```
+from video_7 import find_index
+find_index(my_list, target)
+```
+
+---
+
+### **5. Print module reference**
+
+**Pseudocode**
+
+```
+import video_7
+print(video_7)
+```
+
+---
+
+### **6. Use alias to call function**
+
+**Pseudocode**
+
+```
+import video_7 as mm
+mm.find_index(list, "math")
+```
+
+---
+
+### **7. Import everything using `*`**
+
+**Pseudocode**
+
+```
+from video_7 import *
+```
+
+---
+
+### **8. Create list and call imported function**
+
+**Pseudocode**
+
+```
+course = ["a","b"]
+mm.find_index(course, "b")
+```
+
+---
+
+### **9. Import local module in same directory**
+
+**Pseudocode**
+
+```
+import mymodule
+```
+
+---
+
+### **10. Use alias for smaller function name**
+
+**Pseudocode**
+
+```
+from video_7 import find_index as fi
+fi(list, item)
+```
+
+---
+
+# ✅ **10 MEDIUM QUESTIONS (With Pseudocode)**
+
+---
+
+### **11. Import two modules in same line**
+
+**Pseudocode**
+
+```
+import os, sys
+```
+
+---
+
+### **12. Import specific multiple functions**
+
+**Pseudocode**
+
+```
+from video_7 import find_index, text
+```
+
+---
+
+### **13. Use imported function inside another function**
+
+**Pseudocode**
+
+```
+def check():
+    return mm.find_index(list, "math")
+```
+
+---
+
+### **14. Create custom module and import it**
+
+**Pseudocode**
+
+```
+# file: tools.py
+def fun():
+    return "ok"
+
+# main.py
+import tools
+print(tools.fun())
+```
+
+---
+
+### **15. Use function from module to search for non-existing element**
+
+**Pseudocode**
+
+```
+result = mm.find_index(list, "xyz")
+print(result)   # prints -1
+```
+
+---
+
+### **16. Import module inside a function**
+
+**Pseudocode**
+
+```
+def run():
+    import math
+    print(math.pi)
+```
+
+---
+
+### **17. Reload a module after edit**
+
+**Pseudocode**
+
+```
+import importlib
+importlib.reload(video_7)
+```
+
+---
+
+### **18. Access variable defined inside module**
+
+**Pseudocode**
+
+```
+import video_7
+print(video_7.text)
+```
+
+---
+
+### **19. Check module name**
+
+**Pseudocode**
+
+```
+import video_7
+print(video_7.__name__)
+```
+
+---
+
+### **20. Handle missing module with try/except**
+
+**Pseudocode**
+
+```
+try:
+    import randomxyz
+except:
+    print("module not found")
+```
+
+---
+
+# ✅ **10 HARD QUESTIONS (With Pseudocode)**
+
+---
+
+### **21. Write your own `find_index` function in module and import it**
+
+**Pseudocode**
+
+```
+# tools.py
+def find_index(seq, target):
+    for i, item in enumerate(seq):
+        if item == target:
+            return i
+    return -1
+
+# main.py
+from tools import find_index
+```
+
+---
+
+### **22. Create module with both args and kwargs functions**
+
+**Pseudocode**
+
+```
+# module.py
+def show(*args, **kwargs):
+    print(args, kwargs)
+
+# main.py
+import module
+module.show(1,2,a=10)
+```
+
+---
+
+### **23. Use module inside a loop**
+
+**Pseudocode**
+
+```
+import video_7 as mm
+for item in list:
+    print(mm.find_index(list, item))
+```
+
+---
+
+### **24. Write module returning leap year and import it**
+
+**Pseudocode**
+
+```
+# leap_module.py
+def is_leap(y):
+    return y%4==0 and (y%100!=0 or y%400==0)
+
+# main.py
+from leap_module import is_leap
+print(is_leap(2024))
+```
+
+---
+
+### **25. Import module from subfolder**
+
+**Pseudocode**
+
+```
+from utils.video_7 import find_index
+```
+
+---
+
+### **26. Use alias to avoid function name conflict**
+
+**Pseudocode**
+
+```
+from video_7 import find_index as my_index
+from module2 import find_index as index2
+```
+
+---
+
+### **27. Use imported function to filter items**
+
+**Pseudocode**
+
+```
+for x in my_list:
+    if mm.find_index(my_list, x) != -1:
+        print(x)
+```
+
+---
+
+### **28. Dynamically import module at runtime**
+
+**Pseudocode**
+
+```
+module_name = "video_7"
+mod = __import__(module_name)
+print(mod.text)
+```
+
+---
+
+### **29. From imported module, return and use tuple (index, value)**
+
+**Pseudocode**
+
+```
+def search(seq, target):
+    for i, v in enumerate(seq):
+        if v == target:
+            return (i, v)
+    return (-1, None)
+```
+
+---
+
+### **30. Write custom module that depends on another module**
+
+**Pseudocode**
+
+```
+# moduleA.py
+def double(x):
+    return x*2
+
+# moduleB.py
+import moduleA
+def calc(x):
+    return moduleA.double(x) + 10
+
+# main.py
+import moduleB
+print(moduleB.calc(5))
+```
+
+---
+
+# 🎉 Want More?
+
+I can generate:
+
+✔ MCQs on Modules
+✔ Coding tasks using modules
+✔ Build your own custom package
+✔ Notes + summary of today’s learning
+
+Just tell me!
